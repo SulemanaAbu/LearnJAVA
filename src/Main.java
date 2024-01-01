@@ -1,26 +1,19 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 public class Main {
 
     public static void main(String [] args){
-        Scanner take = new Scanner(System.in);
+       // GUI interface in Java
 
-        System.out.println("What is the name of your company? ");
-        String name = take.nextLine();
+        String name = JOptionPane.showInputDialog("Enter your name");
+        JOptionPane.showMessageDialog(null , "Hello "+name);
 
-        System.out.println("How long have you been working there? ");
-        int age = take.nextInt();
-        take.nextLine();
+        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+        JOptionPane.showMessageDialog(null , "You are  "+age+" years old");
 
-        System.out.println("Name of your reference: ");
-        String reference = take.nextLine();
-
-        System.out.println("Position of reference: ");
-        String position = take.nextLine();
+        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+        JOptionPane.showMessageDialog(null , "You are  "+height+" feets tall");
 
 
-        System.out.println("You work at "+name);
-        System.out.println("You have been working there for "+age+" years");
-        System.out.println(reference+" is your reference");
-        System.out.println(reference+" is the "+position);
+
     }
 }
