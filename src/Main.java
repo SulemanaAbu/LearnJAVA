@@ -2,23 +2,25 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String [] args){
-        //How to accept input in JAVA
-        Scanner accept = new Scanner(System.in);
+        Scanner take = new Scanner(System.in);
+
+        System.out.println("What is the name of your company? ");
+        String name = take.nextLine();
+
+        System.out.println("How long have you been working there? ");
+        int age = take.nextInt();
+        take.nextLine();
+
+        System.out.println("Name of your reference: ");
+        String reference = take.nextLine();
+
+        System.out.println("Position of reference: ");
+        String position = take.nextLine();
 
 
-        System.out.println("what is your name? ");
-        String name = accept.nextLine();
-
-        System.out.println("how old are you? ");
-        int age = accept.nextInt();
-        accept.nextLine();
-
-        System.out.println("what is your favorite food? ");
-        String food = accept.nextLine();
-
-        System.out.println("hello "+name);
-        System.out.println("you are "+age+" years old");
-        System.out.println("you like "+food);
-
+        System.out.println("You work at "+name);
+        System.out.println("You have been working there for "+age+" years");
+        System.out.println(reference+" is your reference");
+        System.out.println(reference+" is the "+position);
     }
 }
