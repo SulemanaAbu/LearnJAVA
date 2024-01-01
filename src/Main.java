@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main{
 
     public static void main(String [] args) {
-        //AND OR NOT logical operators
+        //AND, OR, NOT logical operators
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("You are playing a game! Press q or Q to quit");
