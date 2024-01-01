@@ -1,27 +1,18 @@
-import java.util.Scanner;
+
 public class Main{
 
     public static void main(String [] args) {
-       // nested loops
-        Scanner scanner = new Scanner(System.in);
-        int rows;
-        int columns;
-        String symbol;
+      //Arrays
+     //   String [] cars = {"Camaro", "Toyota", "BMW", "Ferrari"};
+        String [] cars = new String[4];
+        cars[0] = "Camaro";
+        cars[1] = "Toyota";
+        cars[2] = "BMW";
+        cars[3] = "Ferrari";
 
-        System.out.println("Enter # of rows: ");
-        rows = scanner.nextInt();
-
-        System.out.println("Enter # of columns: ");
-        columns = scanner.nextInt();
-
-        System.out.println("Enter symbol to use: ");
-        symbol = scanner.next();
-
-        for (int i=1; i<=rows; i++){
-            System.out.println();
-            for(int j=1; j<=columns; j++){
-                System.out.print(symbol);
-            }
+        // use loops to display all elements in the array
+        for (String car : cars) {
+            System.out.println(car);
         }
     }
 }
