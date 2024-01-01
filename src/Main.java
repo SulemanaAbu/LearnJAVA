@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Main{
 
     public static void main(String [] args){
-        //If and else statements for grade
+        //If and else statements
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter your score: ");
