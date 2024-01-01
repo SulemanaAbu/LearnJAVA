@@ -8,9 +8,9 @@ public class Main{
 
         System.out.println("You are playing a game! Press q or Q to quit");
         String response = scanner.nextLine();
-//When ! is added before the argument in
-// if bracket
-        // it negates the statement
+/*When ! is added before the argument in
+if bracket
+        // it negates the statement*/
         if (response.equals("q") || response.equals("Q") ){
             System.out.println("You have quit the game ");
         }
