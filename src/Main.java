@@ -1,19 +1,24 @@
-import javax.swing.JOptionPane;
-public class Main {
+import java.util.Scanner;
+public class Main{
 
     public static void main(String [] args){
-       // GUI interface in Java
+        // JAVA Math Class
+        // Finding the hypotenuse of a triangle
 
-        String name = JOptionPane.showInputDialog("Enter your name");
-        JOptionPane.showMessageDialog(null , "Hello "+name);
+        double x;
+        double y;
+        double z;
+        Scanner scanner = new Scanner(System.in);
 
-        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
-        JOptionPane.showMessageDialog(null , "You are  "+age+" years old");
+        System.out.println("Enter the value of x: ");
+        x = scanner.nextDouble();
 
-        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
-        JOptionPane.showMessageDialog(null , "You are  "+height+" feets tall");
+        System.out.println("Enter the value of y: ");
+        y = scanner.nextDouble();
 
+        z = Math.sqrt((x*x) + (y*y)) ;
+        System.out.println("The value of the hypotenuse is: "+z);
 
-
+scanner.close();
     }
 }
