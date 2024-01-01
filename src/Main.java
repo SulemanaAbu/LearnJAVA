@@ -1,9 +1,8 @@
 import java.util.Scanner;
-import javax.swing.JOptionPane;
 public class Main{
 
     public static void main(String [] args){
-        //If and else statements for grade check
+        //If and else statements for grade check1
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter your score: ");
