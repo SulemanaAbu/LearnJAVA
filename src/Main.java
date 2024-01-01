@@ -1,24 +1,31 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class Main{
 
     public static void main(String [] args) {
-      // arraylists
-        ArrayList<String> food = new ArrayList<String>();
+      // 2D ArrayLists
+        ArrayList<ArrayList<String>> groceryList = new ArrayList();
 
-        food.add("Pizza");
-        food.add("Hamburger");
-        food.add("Hot dog");
+        ArrayList<String> bakeryList = new ArrayList();
+        bakeryList.add("pasta");
+        bakeryList.add("garlic bread");
+        bakeryList.add("donuts");
 
-        food.set(0, "Jollof");
-        food.remove(2);
-        food.clear();
+        ArrayList<String> produceList = new ArrayList();
+        produceList.add("tomatoes");
+        produceList.add("zucchini");
+        produceList.add("carrots");
+        produceList.add("peppers");
 
-        for(int i=0; i<food.size(); i++ ){
-            System.out.println(food.get(i));
+        ArrayList<String> drinkList = new ArrayList();
+        drinkList.add("soda");
+        drinkList.add("coke");
 
-        }
+        groceryList.add(bakeryList);
+        groceryList.add(produceList);
+        groceryList.add(drinkList);
 
+        System.out.println(groceryList.get(0).get(0));
 
     }
 }
