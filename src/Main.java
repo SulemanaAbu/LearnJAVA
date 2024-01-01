@@ -1,15 +1,11 @@
-import java.util.Scanner;
+
 public class Main{
 
     public static void main(String [] args) {
-       // while loops
-        Scanner scanner = new Scanner(System.in);
-        String name = "";
-
-        while(name.isBlank()){
-            System.out.print("Enter your name: ");
-             name = scanner.nextLine();
+       // for loop
+        for (int i=10; i>=0; i-=5){
+            System.out.println(i);
         }
-        System.out.println("Hello "+name);
+        System.out.println("Happy new Year!");
     }
 }
