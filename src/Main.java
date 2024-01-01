@@ -1,24 +1,17 @@
- import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;
+public class Main {
 
-public class Main{
-    // Simple GUI ownTry
-    public static void main (String [] args){
+    public static void main(String [] args){
+       // GUI interface in Java
 
         String name = JOptionPane.showInputDialog("Enter your name");
-        JOptionPane.showMessageDialog(null, "Your name is "+name);
+        JOptionPane.showMessageDialog(null , "Hello "+name);
 
-        String school = JOptionPane.showInputDialog("Enter the name of your school");
-        JOptionPane.showMessageDialog(null, "You attend "+school);
+        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+        JOptionPane.showMessageDialog(null , "You are  "+age+" years old");
 
-        String program = JOptionPane.showInputDialog("Enter the program you offer");
-        JOptionPane.showMessageDialog(null, "You offer "+program);
-
-        int age = Integer.parseInt(JOptionPane.showInputDialog(null, "How old are you?"));
-        JOptionPane.showMessageDialog(null, "You are "+age+" years old");
-
-        double gpa = Double.parseDouble(JOptionPane.showInputDialog("Enter your current gpa"));
-        JOptionPane.showMessageDialog(null, "Your gpa is "+gpa);
-
+        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+        JOptionPane.showMessageDialog(null , "You are  "+height+" feets tall");
 
 
 
