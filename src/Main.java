@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 public class Main{
 
     public static void main(String [] args){
-        //If and else statements
+        //If and else statements for grade check
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter your score: ");
