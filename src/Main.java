@@ -3,18 +3,12 @@ public class Main{
 
     public static void main(String [] args) {
      //OBJECT ORIENTED PROGRAMMING
-        Car myCar = new Car();
-        System.out.println("The color: "+myCar.color);
-        System.out.println("The name: "+myCar.make);
-        System.out.println("The color: "+myCar.color);
-        System.out.println("The model: "+myCar.model);
-        System.out.println("The price: "+myCar.price);
-        System.out.println("The year: "+myCar.year);
+        //CONSTRUCTORS
+        Human human1 = new Human("Bro", 18, 60);
+        Human human2 = new Human("Cherry", 21, 45);
 
-        myCar.drive();
-        myCar.brake();
-
-
+        human1.drink();
+        human2.eat();
 
     }
 }
