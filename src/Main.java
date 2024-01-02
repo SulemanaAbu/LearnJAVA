@@ -2,18 +2,21 @@
 public class Main{
 
     public static void main(String [] args) {
-        //Encapsulation
-        Car car = new Car("Chevrolet","Camaro", 2020);
-        //Setters
-        car.setYear(2021);
-        car.setMake("Tesla");
-        car.setModel("Doge");
-        //Getters
-        System.out.println(car.getMake());
-        System.out.println(car.getModel());
-        System.out.println(car.getYear());
+        //Java copy objects
+        Car car1 = new Car("Chevrolet","Camaro",2020);
+        Car car2 = new Car("BMW", "Mustang",2021);
 
+        car1.copy(car2);
 
-
+        System.out.println(car1);
+        System.out.println(car2);
+        System.out.println();
+        System.out.println(car1.getMake());
+        System.out.println(car1.getModel());
+        System.out.println(car1.getYear());
+        System.out.println();
+        System.out.println(car2.getMake());
+        System.out.println(car2.getModel());
+        System.out.println(car2.getYear());
     }
 }
