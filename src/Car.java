@@ -1,4 +1,5 @@
 public class Car {
+    //Car class
     String make = "Ferrari";
     String model = "Tate";
     int year = 2023;
