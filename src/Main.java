@@ -2,9 +2,13 @@
 public class Main{
 
     public static void main(String [] args) {
-     //final keyword
-        final double PI= 3.142;
+     //OBJECT ORIENTED PROGRAMMING
+        Car myCar = new Car();
+        System.out.println(myCar.color);
+        System.out.println(myCar.make);
+        System.out.println(myCar.model);
 
-        System.out.println(PI);
+
+
     }
 }
