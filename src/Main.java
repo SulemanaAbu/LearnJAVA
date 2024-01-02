@@ -4,7 +4,7 @@ import java.util.Scanner;
 import javax.sound.sampled.*;
 
 public class Main {
-
+//Java audio
     public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException{
 
         Scanner scanner = new Scanner(System.in);
