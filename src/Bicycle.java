@@ -1,7 +1,6 @@
-public class Bicycle {
+public class Bicycle extends Vehicle {
     // Bicycle class
-    String name;
-    Bicycle(String name){
-        this.name = name;
-    }
+    int wheels =2;
+    int pedals = 2;
+
 }

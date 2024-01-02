@@ -2,12 +2,15 @@
 public class Main{
 
     public static void main(String [] args) {
-    //Static keyword modifier
-        Friend friend1 = new Friend("Darko");
-        Friend friend2 = new Friend("Derrick");
-        Friend friend3 = new Friend("Richmond");
+    //Inheritance
+        Car car = new Car();
+        Vehicle vehicle = new Vehicle();
+        Bicycle bicycle = new Bicycle();
 
-        Friend.showFriends();
+
+        car.go();
+        bicycle.stop();
+        System.out.println(car.doors);
 
     }
 }
