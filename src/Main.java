@@ -1,16 +1,13 @@
-import javax.swing.JOptionPane;
+
 public class Main{
 
     public static void main(String [] args) {
 
-    //Overriding
-        String name = JOptionPane.showInputDialog("Enter your name: ");
-        JOptionPane.showMessageDialog(null,"hello "+name);
+        //Overriding
+       Animal animal = new Animal();
+       Dog dog = new Dog();
 
-        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age: "));
-        JOptionPane.showMessageDialog(null, "You are "+age+" years old");
-
-        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height: "));
-        JOptionPane.showMessageDialog(null, "You are "+height+" cm tall");
+       animal.speak();
+       dog.speak();
     }
 }
