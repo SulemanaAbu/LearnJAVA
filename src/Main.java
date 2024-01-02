@@ -1,20 +1,19 @@
-import java.io.File;
+
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Main{
 
     public static void main(String [] args) {
-        //Java file class
-        File file = new File("C:/Users/saddi/OneDrive/Desktop/secret_message.txt/");
+        //Java file writer
+        try {
+            FileWriter writer = new FileWriter("C:/Users/saddi/IdeaProjects/MyFirstProgram/poem.txt");
+            writer.write("Roses are red \nViolets are Blue \nBooty booty booty \nRock and roll");
+            writer.append("\n(A poem by Bro)");
+            writer.close();
 
-        if (file.exists()){
-            System.out.println("That file exists");
-            System.out.println(file.getAbsolutePath());
-            System.out.println(file.isFile());
-
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
-        else{
-            System.out.println("That file does not exist");
-        }
-
     }
 }
