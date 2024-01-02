@@ -1,16 +1,16 @@
-
+import javax.swing.JOptionPane;
 public class Main{
 
     public static void main(String [] args) {
-    //Inheritance
-        Car car = new Car();
-        Vehicle vehicle = new Vehicle();
-        Bicycle bicycle = new Bicycle();
 
+    //Overriding
+        String name = JOptionPane.showInputDialog("Enter your name: ");
+        JOptionPane.showMessageDialog(null,"hello "+name);
 
-        car.go();
-        bicycle.stop();
-        System.out.println(car.doors);
+        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age: "));
+        JOptionPane.showMessageDialog(null, "You are "+age+" years old");
 
+        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height: "));
+        JOptionPane.showMessageDialog(null, "You are "+height+" cm tall");
     }
 }
