@@ -1,6 +1,4 @@
-public class Father {
+public abstract class Father {
 
-    void him(){
-        System.out.println("The father is tall");
-    }
+    abstract void him();
 }
