@@ -1,11 +1,19 @@
-
-
+import java.util.Scanner;
 public class Main{
 
     public static void main(String [] args) {
      //Java method Overloading
-        double x = add(2.45,3.2, 4.30, 2.2);
-        System.out.println(x);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter number a: ");
+        double a =scanner.nextDouble();
+        System.out.println("Enter number b: ");
+        double b =scanner.nextDouble();
+        System.out.println("Enter number c: ");
+        double c =scanner.nextDouble();
+        System.out.println("Enter number d: ");
+        double d =scanner.nextDouble();
+        double x = add(a,b,c,d);
+        System.out.println("The sum of your numbers is: "+x);
     }
 
     static int add(int a, int b){
