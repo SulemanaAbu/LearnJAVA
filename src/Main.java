@@ -4,10 +4,10 @@ public class Main{
     public static void main(String [] args) {
 
         //Overriding
-       Animal animal = new Animal();
-       Dog dog = new Dog();
+       Father father = new Father ();
+       Son son = new Son();
 
-       animal.speak();
-       dog.speak();
+       father.him();
+       son.him();
     }
 }
