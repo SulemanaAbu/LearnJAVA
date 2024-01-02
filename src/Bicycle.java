@@ -1,6 +1,7 @@
 public class Bicycle extends Vehicle {
-    // Bicycle class
-    int wheels =2;
-    int pedals = 2;
+    @Override
+    public void go(){
+        System.out.println("The bike begins moving");
+    }
 
 }

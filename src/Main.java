@@ -2,14 +2,15 @@
 public class Main{
 
     public static void main(String [] args) {
-        //Java Interface
-        Fish fish = new Fish();
-        Rabbit rabbit = new Rabbit();
-        Hawk hawk = new Hawk();
+        //Polymorphism
+        Car car = new Car();
+        Bicycle bike = new Bicycle();
+        Boat boat = new Boat();
 
-    rabbit.flee();
-    hawk.hunt();
-    fish.flee();
-    fish.hunt();
+        Vehicle [] racers = {car, bike, boat};
+        for (Vehicle v : racers){
+            v.go();
+        }
+
     }
 }

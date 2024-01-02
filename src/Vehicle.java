@@ -1,5 +1,7 @@
-public abstract class Vehicle {
+public class Vehicle {
     //Vehicle class parent class
-    abstract void go();
+    public void go(){
+        System.out.println("The Vehicle begins moving");
+    }
 }
 
