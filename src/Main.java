@@ -4,7 +4,7 @@ public class Main{
     public static void main(String [] args) {
      // printf method
         //%d for positioning decimals
-        /*System.out.printf("%d The jersey number of Mohammed Kudus", 14);*/
+        /*System.out.printf("%d The jersey number of Mohammed Kuku", 14);*/
        // boolean myBoolean = true;
        // char myChar = '@';
        // String myString = "Tate";
